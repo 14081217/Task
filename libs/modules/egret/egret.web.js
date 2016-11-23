@@ -4510,7 +4510,7 @@ var egret;
                 /**
                  * @private
                  */
-                this.ontheChange = function (e) {
+                this.onChange = function (e) {
                     var event = new egret.OrientationEvent(egret.Event.CHANGE);
                     event.beta = e.beta;
                     event.gamma = e.gamma;
@@ -4524,14 +4524,14 @@ var egret;
              *
              */
             p.start = function () {
-                window.addEventListener("deviceorientation", this.ontheChange);
+                window.addEventListener("deviceorientation", this.onChange);
             };
             /**
              * @private
              *
              */
             p.stop = function () {
-                window.removeEventListener("deviceorientation", this.ontheChange);
+                window.removeEventListener("deviceorientation", this.onChange);
             };
             return WebDeviceOrientation;
         }(egret.EventDispatcher));
@@ -4631,7 +4631,7 @@ var egret;
                 /**
                  * @private
                  */
-                this.ontheChange = function (e) {
+                this.onChange = function (e) {
                     var event = new egret.MotionEvent(egret.Event.CHANGE);
                     var acceleration = {
                         x: e.acceleration.x,
@@ -4660,14 +4660,14 @@ var egret;
              *
              */
             p.start = function () {
-                window.addEventListener("devicemotion", this.ontheChange);
+                window.addEventListener("devicemotion", this.onChange);
             };
             /**
              * @private
              *
              */
             p.stop = function () {
-                window.removeEventListener("devicemotion", this.ontheChange);
+                window.removeEventListener("devicemotion", this.onChange);
             };
             return WebMotion;
         }(egret.EventDispatcher));

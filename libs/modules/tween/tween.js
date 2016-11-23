@@ -759,7 +759,7 @@ var egret;
          * @language en_US
          * Activate an object and add a Tween animation to the object
          * @param target {any} The object to be activated
-         * @param props {any} Parameters, support loop ontheChange onChangeObj
+         * @param props {any} Parameters, support loop onChange onChangeObj
          * @param pluginData {any} Write realized
          * @param override {boolean} Whether to remove the object before adding a tween, the default value false
          * Not recommended, you can use Tween.removeTweens(target) instead.
@@ -770,7 +770,7 @@ var egret;
          * @language zh_CN
          * 激活一个对象，对其添加 Tween 动画
          * @param target {any} 要激活 Tween 的对象
-         * @param props {any} 参数，支持loop(循环播放) ontheChange(变化函数) onChangeObj(变化函数作用域)
+         * @param props {any} 参数，支持loop(循环播放) onChange(变化函数) onChangeObj(变化函数作用域)
          * @param pluginData {any} 暂未实现
          * @param override {boolean} 是否移除对象之前添加的tween，默认值false。
          * 不建议使用，可使用 Tween.removeTweens(target) 代替。
@@ -950,7 +950,7 @@ var egret;
                 this._useTicks = props.useTicks;
                 this.ignoreGlobalPause = props.ignoreGlobalPause;
                 this.loop = props.loop;
-                props.ontheChange && this.addEventListener("change", props.ontheChange, props.onChangeObj);
+                props.onChange && this.addEventListener("change", props.onChange, props.onChangeObj);
                 if (props.override) {
                     Tween.removeTweens(target);
                 }

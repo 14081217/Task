@@ -838,7 +838,7 @@ declare module egret {
          * @language en_US
          * Activate an object and add a ScrollTween animation to the object
          * @param target {any} The object to be activated
-         * @param props {any} Parameters, support loop ontheChange onChangeObj
+         * @param props {any} Parameters, support loop onChange onChangeObj
          * @param pluginData {any} Write realized
          * @param override {boolean} Whether to remove the object before adding a tween, the default value false
          * @version Egret 2.4
@@ -848,7 +848,7 @@ declare module egret {
          * @language zh_CN
          * 激活一个对象，对其添加 ScrollTween 动画
          * @param target {any} 要激活 ScrollTween 的对象
-         * @param props {any} 参数，支持loop(循环播放) ontheChange(变化函数) onChangeObj(变化函数作用域)
+         * @param props {any} 参数，支持loop(循环播放) onChange(变化函数) onChangeObj(变化函数作用域)
          * @param pluginData {any} 暂未实现
          * @param override {boolean} 是否移除对象之前添加的tween，默认值false
          * @version Egret 2.4
